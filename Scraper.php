@@ -27,7 +27,7 @@ class Scraper {
       curl_close($ch);
       $parse = parse_url($url);
       $fileDir = $parse['path'];
-      $file_name = "/home/dilion/Downloads". $fileDir;
+      $file_name = "images". $fileDir;
       $file = fopen($file_name , 'w') or die("X_x");
       fwrite($file, $response);
       fclose($file);
